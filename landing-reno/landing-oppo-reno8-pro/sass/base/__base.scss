@@ -1,0 +1,40 @@
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.box-container {
+    max-width: 1200px;
+    padding: 0 12px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ct-mb {
+    display: none;
+}
+
+main {
+    font-family: roboto;
+}
+
+@include responsive("md") {
+    .box-container {
+        padding: 0 5px;
+    }
+}
+
+@include responsive("sm") {
+    .box-container {
+        padding: 0 10px;
+    }
+}
+
+@include responsive(sm) {
+    .ct-desk {
+        display: none;
+    }
+    .ct-mb {
+        display: block;
+    }
+}
