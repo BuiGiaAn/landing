@@ -1,0 +1,1 @@
+node-sass --watch FPTShop_Landing_Reno8/mobile/scss/mobile.scss FPTShop_Landing_Reno8/mobile/css/mobile.css

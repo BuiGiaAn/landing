@@ -1,0 +1,19 @@
+@mixin aspect-ratio($width, $height, $hEx) {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 0;
+    // @debug "ABCC: #{$width}";
+
+    padding-top: calc((#{$height / $width} * 100%) + #{$hEx}px);
+    & > :first-child {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+

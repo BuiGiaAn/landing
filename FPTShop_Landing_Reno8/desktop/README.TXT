@@ -1,0 +1,1 @@
+sass --watch FPTShop_Landing_Reno8/scss/main.scss FPTShop_Landing_Reno8/css/style.css

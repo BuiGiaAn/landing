@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'SharpSansRegular';
+    src: url('../fonts/SharpSansRegular.eot');
+    src: url('../fonts/SharpSansRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SharpSansRegular.woff2') format('woff2'),
+        url('../fonts/SharpSansRegular.woff') format('woff'),
+        url('../fonts/SharpSansRegular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'SharpSans-Bold';
+    src: url('../fonts/SharpSans-Bold.eot');
+    src: url('../fonts/SharpSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SharpSans-Bold.woff2') format('woff2'),
+        url('../fonts/SharpSans-Bold.woff') format('woff'),
+        url('../fonts/SharpSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'SharpSans-Medium';
+    src: url('../fonts/SharpSans-Medium.eot');
+    src: url('../fonts/SharpSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SharpSans-Medium.woff2') format('woff2'),
+        url('../fonts/SharpSans-Medium.woff') format('woff'),
+        url('../fonts/SharpSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
