@@ -49,13 +49,13 @@ a:hover {
         display: flex;
         justify-content: center;
 
-        a {
-            @include setText('roboto', 20px, $white, 14px, 500);
-
+        span {
+            @include setText(Roboto, 20px, $white, 20px, 500);
+            margin-bottom: 2px
         }
 
         p {
-            @include setText('roboto', 14px, $white, 14px, 100);
+            @include setText(Roboto, 14px, $white, 14px, 400);
         }
 
 
@@ -67,6 +67,7 @@ a:hover {
             border-radius: 6px;
             padding: 10px;
             transition: all .3s cubic-bezier(0, 0, .4, 1);
+
 
             &:hover {
 
@@ -148,13 +149,21 @@ a:hover {
         @include flexCenter();
         background-color: #CB1C22;
         border-radius: 6px;
-        padding: 6px;
+        padding: 8px 16px 8px 12px;
+
+        a {
+            display: flex;
+            align-items: center;
+            @include setText(Roboto, 16px, $white, 16px, 500);
+        }
     }
 
     .icon-call {
         &:before {
             font-size: 20px;
         }
+
+        margin-right: 10px;
     }
 
     span {
@@ -178,18 +187,20 @@ a:hover {
     background-image: url("../images/st-gift-bg.png");
     background-size: cover;
     text-align: center;
+    padding: 24px 0 42px 0;
 
     &-content {
         width: 100%;
         padding: 20px;
 
         &-gift {
-            @include setText(Roboto, 36px, $black, 16px, 700);
+            @include setText(Roboto, 36px, $black, 50px, 700);
+            margin-bottom: 6px
         }
 
         &-value {
             @include setText(Roboto, 16px, $black, 19px, 600);
-            margin: 15px 0 6px 0;
+            margin-bottom: 6px
         }
 
         &-cost {
@@ -250,34 +261,45 @@ a:hover {
         display: flex;
         justify-content: center;
         @include setText(Roboto, 16px, $gray-700, 23px, 400);
-        gap: 16px;
         margin-top: 20px;
         width: 100%;
-        // display: flex;
-        // gap: 16px;
-        // text-align: center;
+
     }
 
     &_AI {
         width: 100%;
         max-width: 300px;
+        margin-right: 16px;
 
     }
 
     &_vidsel {
         width: 100%;
         max-width: 300px;
+        margin-bottom: 3px;
+        margin-right: 16px;
+    }
+
+    &_vid {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 3px;
     }
 
     &_sel {
         width: 100%;
         max-width: 300px;
         margin-top: 1px;
+
+        img {
+            margin-top: 3px;
+        }
     }
 
     &_night {
         width: 100%;
         max-width: 300px;
+        margin-right: 8px;
 
     }
 
@@ -325,11 +347,13 @@ a:hover {
     }
 
     &-content4 {
-        @include setText(Roboto, 16px, $gray-700, 24px, 400);
-
         ul {
             list-style: disc;
             margin-left: 30px;
+        }
+
+        li {
+            @include setText(Roboto, 16px, $gray-700, 24px, 600);
         }
     }
 
@@ -354,6 +378,7 @@ a:hover {
         padding-top: 20px;
         gap: 20px;
         flex-direction: column;
+        margin-top: 19px;
 
     }
 
@@ -380,6 +405,7 @@ a:hover {
 
     &-fifth {
         @include setText(Roboto, 16px, $gray-700, 24px, 400);
+        font-style: italic;
 
     }
 }
@@ -395,7 +421,7 @@ a:hover {
 
         &-left {
             width: 100%;
-            max-width: 830px;
+            max-width: 860px;
             text-align: center;
         }
 
@@ -436,7 +462,7 @@ a:hover {
         &-right {
             display: flex;
             align-items: end;
-            max-width: 262px;
+            max-width: 316px;
             width: 100%;
         }
 
@@ -446,10 +472,13 @@ a:hover {
 
 
     &-store {
+        width: 100%;
+
         &_title {
             @include setText(Roboto, 16px, $white, 24px, 600);
             margin-bottom: 40px;
             text-align: center;
+
 
         }
     }
@@ -488,7 +517,7 @@ a:hover {
 
             background-color: $primary;
             border-radius: 6px;
-            padding: 20px;
+            padding: 18px 31px;
             @include setText(Roboto, 20px, $white, 20px, 500);
         }
     }
@@ -649,6 +678,7 @@ table {
 .card-body {
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
     padding: 20px 20px 16px 20px;
+    border-radius: 6px
 }
 
 .card-title {
@@ -705,6 +735,13 @@ table {
 
     &_left {
         margin-right: 24px;
+        max-width: 576px;
+        width: 100%;
+    }
+
+    &_right {
+        max-width: 576px;
+        width: 100%;
     }
 
     &_rules {
@@ -718,6 +755,7 @@ table {
     gap: 24px;
     padding: 16px;
     position: relative;
+    height: 548px;
 
     &_first {
         @include setText(Roboto, 16px, $gray-700, 24px, 400);
@@ -761,12 +799,24 @@ table {
 
 
     &-box {
+        max-width: 300px;
+        width: 100%;
+
         a {
             box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
             padding: 8px 8px 8px 12px;
             margin-right: 24px;
+            position: relative;
+
+
         }
 
+    }
+
+    &-check {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
     }
 
     &_bottom {
@@ -781,10 +831,21 @@ table {
         box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
         padding: 8px 8px 8px 12px;
 
-
     }
 }
 
+.input_search {
+    padding: 4px 8px 4px 20px;
+    width: 100%;
+
+
+}
+
+
+.st-news {
+    padding-top: 30px;
+
+}
 
 .news-content {
     display: flex;
@@ -842,6 +903,7 @@ table {
     background-color: $gray-200;
     padding: 5px 8px 5px 8px;
     border-radius: 4px;
+    @include setText(Roboto, 14px, $gray-600, 14px, 400)
 }
 
 .tips {
@@ -849,6 +911,7 @@ table {
     padding: 5px 8px 5px 8px;
     border-radius: 4px;
     margin-left: 8px;
+    @include setText(Roboto, 14px, $gray-600, 14px, 400)
 }
 
 .news-right {
@@ -884,14 +947,25 @@ table {
 
 .icon-search {
     margin-right: 10px;
+    position: absolute;
+    top: 23%;
+    height: 20px;
+    width: 20px;
+    margin-left: 3px;
+}
+
+
+.st-QnA {
+    padding-top: 30px;
 }
 
 .QnA-container {
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
     display: flex;
     padding: 6px 16px 6px 16px;
     justify-content: space-between;
     border-radius: 6px;
+    position: relative;
 }
 
 .QnA-head {
@@ -902,16 +976,38 @@ table {
 
 
     &_title {
-        @include setText(Roboto, 20px, $gray-800, 28px, 500)
+        @include setText(Roboto, 20px, $gray-800, 28px, 500);
+        align-items: center;
+        display: flex;
     }
 
     &_search {
         @include setText(Roboto, 14px, $gray-500, 20px, 400);
         display: flex;
         align-items: center;
-        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
         padding: 6px 8px 6px 12px;
+        position: relative;
+        max-width: 276px;
+        width: 100%;
+
+
+        i {
+            position: absolute;
+            margin-left: 7px;
+            margin-top: 2px;
+        }
+
+        &-box {
+            width: 276px;
+
+        }
     }
+}
+
+.head_search {
+    padding: 6px 8px 6px 20px;
+    margin-left: 2px;
+    width: 100%;
 }
 
 .QnA-cmt {
@@ -919,6 +1015,11 @@ table {
 
     &_title {
         @include setText(Roboto, 16px, $gray-500, 24px, 400);
+        padding: 0 915px 91px 16px;
+        border-radius: 6px;
+        border: 1px solid;
+        resize: none;
+
     }
 
     &_btn {
@@ -927,6 +1028,9 @@ table {
         padding: 10px 16px 10px 16px;
         border-radius: 6px;
         margin: 18px 0;
+        position: absolute;
+        right: 20px;
+        top: 26px;
     }
 }
 
@@ -1121,6 +1225,65 @@ table {
     max-width: 100px;
     width: 100%;
     margin-top: 8px;
+}
+
+.comment-section {
+    background-color: #fff;
+    padding-top: 0;
+
+    form {
+        position: relative;
+        padding: 16px 20px;
+    }
+
+    .comment-input-container {
+        position: relative;
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px 60px 10px 10px;
+            /* Padding right để chừa chỗ cho nút */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+            box-sizing: border-box;
+        }
+
+        button {
+            position: absolute;
+            right: 10px;
+            top: 31px;
+            background-color: $primary;
+            color: #fff;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            max-width: 113px;
+            width: 100%;
+            /* Cao bằng textarea */
+
+            &:hover {
+                background-color: rgb(164, 5, 5);
+            }
+        }
+    }
+
+    #comment-list {
+        .comment {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+    }
 }
 
 // .checkbox {

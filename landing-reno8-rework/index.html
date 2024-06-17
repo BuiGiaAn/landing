@@ -31,7 +31,8 @@
   <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://fptshop.com.vn/LandingNew/css/icon-fptshop.css" />
+  <link rel="stylesheet" href="css/icon-fptshop.css" />
+  <!-- <link rel="stylesheet" href="https://fptshop.com.vn/LandingNew/css/icon-fptshop.css" /> -->
   <!-- <link rel="stylesheet" href="https://fptshop.com.vn/Content/Landing/search-Header-Footer.css\"> -->
   <!-- <link rel="stylesheet" href="css/hd-ft.css"> -->
 
@@ -52,7 +53,7 @@
 
 <body>
   <main>
-    <section class="st-banner" s>
+    <section class="st-banner">
       <div class="st-banner_phone">
         <div>
           <img src="./images/st-banner-phone-left.png" alt="">
@@ -65,11 +66,11 @@
         <div class="st-banner_booking">
           <div class="st-banner_btn-group">
             <a class="btn--primary">
-              <p>ĐẶT NGAY</p>
+              <span>ĐẶT NGAY</span>
               <p>Cọc 500.000Đ</p>
             </a>
             <a class="btn--link">
-              <p>TRẢ GÓP</p>
+              <span>TRẢ GÓP</span>
               <p>Cọc 500.000Đ</p>
             </a>
           </div>
@@ -93,9 +94,8 @@
             <li><a>Thể lệ</a></li>
           </ul>
           <div class="st-menu--call">
-            <i class="icon-call">
-            </i>
-            <span> Gọi 1800 6601</span>
+            <a> <i class="icon-call">
+              </i> Gọi 1800 6601</a>
           </div>
         </div>
       </div>
@@ -133,13 +133,23 @@
           Bừng sáng khoảnh khắc đêm
         </div>
         <div class="st-avt_img">
-          <div class="st-avt_AI"> <img src="./images/st-avtAI.png"> Chỉnh sửa chân dung AI</div>
-          <div class="st-avt_vidsel">
-            <div class="st-avt_vid"><img src="./images/st-avt-vid.png">Video siêu quay đêm*</div>
-            <div class="st-avt_sel"><img src="./images/st-avt-sel.png">Selfie HDR</div>
+          <div class="st-avt_AI"> <img src="./images/st-avtAI.png">
+            <div>Chỉnh sửa chân dung AI</div>
           </div>
-          <div class="st-avt_night"><img src="./images/st-avt-night.png">Chân dung đêm*</div>
-          <div class="st-avt_boken"><img src="./images/st-avt-bokeh.png">Chân dung Bokeh Flare</div>
+          <div class="st-avt_vidsel">
+            <div class="st-avt_vid"><img src="./images/st-avt-vid.png">
+              <div>Video siêu quay đêm*</div>
+            </div>
+            <div class="st-avt_sel"><img src="./images/st-avt-sel.png">
+              <div>Selfie HDR</div>
+            </div>
+          </div>
+          <div class="st-avt_night"><img src="./images/st-avt-night.png">
+            <div>Chân dung đêm*</div>
+          </div>
+          <div class="st-avt_boken"><img src="./images/st-avt-bokeh.png">
+            <div>Chân dung Bokeh Flare</div>
+          </div>
         </div>
         <div class="st-avt-content">
           <div class="st-avt-content1">
@@ -366,11 +376,17 @@
                 Max</strong></div>
             <div class="contain-content_first">Màn hình của iPhone 11 Pro hiện đã được nâng cấp lên với công nghệ mới
               <div>mà Apple gọi là Super Retina XDR đem đến độ sáng màn hình tối đa lên đến</div>
-              <div>1200 nits và Apple đã loại bỏ đi 3D Touch. Thành thực mà nói, 3D Touch với
+              <div>1200 nits và Apple đã loại bỏ đi 3D Touch. Thành thực mà nói, 3D Touch với 1200 nits và Apple đã loại
+                bỏ đi 3D Touch. Thành thực mà nói, 3D Touch với1200 nits và Apple đã loại bỏ đi 3D Touch. Thành thực mà
+                nói, 3D Touch với1200 nits và Apple đã loại bỏ đi 3D Touch. Thành thực mà nói, 3D Touch với1200 nits và
+                Apple đã loại bỏ đi 3D Touch. Thành thực mà nói, 3D Touch với1200 nits và Apple đã loại bỏ đi 3D Touch.
+                Thành thực mà nói, 3D Touch với1200 nits và Apple đã loại bỏ đi 3D Touch. Thành thực mà nói, 3D Touc
               </div>một số người không mấy hấp
               dẫn nhưng với một số thì đây
               là một tính năng
               <div>khá thú vị.</div>
+
+
             </div>
             <div class="contain-content_third">
               <div class="contain-content_third-child"><a>Xem Thêm <i class="ic-down-dir">
@@ -383,12 +399,12 @@
         <div class="st-event_right">
           <div class="st-event_rules">Danh sách 320 khách đặt hàng</div>
 
-
           <div class="contain-list">
 
             <div class="list_find">
               <div class="list_find-box">
-                <div> <a><i class="icon-search"></i>Nhập số điện thoại để tìm kiếm</a></div>
+                <i class="icon-search"></i>
+                <div> <input class="input_search" type="text" placeholder="Nhập số điện thoại để tìm kiếm"></div>
               </div>
               <div class="list_find-check">
                 <div>
@@ -459,14 +475,14 @@
                 <td>0919876xxx</td>
                 <td>Chưa cọc</td>
               </tr>
-
-            </table>
-            <div class="list_find_bottom">
-              <div class="list_find_more"><a>Xem Thêm <i class="ic-down-dir">
-                  </i></a></div>
-            </div>
+          </div>
+          </table>
+          <div class="list_find_bottom">
+            <div class="list_find_more"><a>Xem Thêm <i class="ic-down-dir">
+                </i></a></div>
           </div>
         </div>
+      </div>
     </section>
 
 
@@ -586,13 +602,23 @@
     <section class="st-QnA box-container">
       <div class="QnA-head">
         <div class="QnA-head_title">Hỏi và đáp</div>
-        <div class="QnA-head_search"><i class="icon-search"></i> Tìm theo nội dung, người gửi...</div>
+        <div class="QnA-head_search">
+          <div> <i class="icon-search"></i></div>
+          <div class="QnA-head_search-box"><input class="head_search" type="text"
+              placeholder="Tìm theo nội dung, người gửi..."></div>
+        </div>
+
       </div>
 
-      <div class="QnA-cmt">
-        <div class="QnA-container">
-          <div class="QnA-cmt_title">Nhập nội dung bình luận (tiếng Việt có dấu)...</div>
-          <div class="QnA-cmt_btn"> <a>GỬI BÌNH LUẬN</a></div>
+      <div class="comment-section box-container">
+        <form id="comment-form">
+          <div class="comment-input-container">
+            <textarea id="comment-input" placeholder="Nhập nội dung bình luận (tiếng Việt có dấu)..."></textarea>
+            <button type="submit">Gửi bình luận</button>
+          </div>
+        </form>
+        <div id="comment-list">
+          <!-- Bình luận sẽ xuất hiện ở đây -->
         </div>
       </div>
 
