@@ -1,0 +1,59 @@
+body {
+    overflow-x: hidden;
+    background-color: $gray-100;
+
+}
+
+.box-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.box-container-mb {
+    max-width: 360px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.grid-mb {
+    max-width: 340px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.ct-mb {
+    display: none;
+}
+
+main {
+    font-family: roboto;
+}
+
+@include responsive("md") {
+    .box-container {
+        padding: 0 5px;
+    }
+}
+
+@include responsive("sm") {
+    .box-container {
+        padding: 0 10px;
+    }
+}
+
+@include responsive(sm) {
+    .ct-desk {
+        display: none;
+    }
+
+    .ct-mb {
+        display: block;
+    }
+}

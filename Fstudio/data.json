@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Ngân hàng Thương mại cổ phần Công Thương Việt Nam (VietinBank)",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLivHbziB9tjoR3OQuvR626wCxNQ-efzySfw&s",
+        "location": "Viettinbank"
+    },
+    {
+        "name": "Ngân hàng thương mại cổ phần Ngoại thương Việt Nam (Vietcombank)",
+        "image": "https://www.inlogo.vn/wp-content/uploads/2023/04/logo-vietcombank.png",
+        "location": "Vietcombank"
+    },
+    {
+        "name": "Ngân hàng Thương mại Cổ phần Quốc tế Việt Nam (Vietcombank)",
+        "image": "https://upanh.vector6.com/images/2020/04/24/026-Logo-PNG-FILE-NganHang-VIB-Bank.jpg",
+        "location": "Vietcombank"
+    },
+    {
+        "name": "Ngân hàng TMCP Việt Á (VietABank)",
+        "image": "https://downloadlogomienphi.com/sites/default/files/logos/download-logo-vector-vietabank-mien-phi.jpg ",
+        "location": "VietABank"
+    }
+]

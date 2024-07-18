@@ -1,0 +1,54 @@
+body {
+    overflow-x: hidden;
+    background-color: $gray-100;
+}
+
+.box-container {
+    max-width: 778px;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 6px;
+    padding: 0;
+}
+
+.grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.ct-mb {
+    display: none;
+}
+
+main {
+    font-family: roboto;
+}
+
+@include responsive("md") {
+    .box-container {
+        padding: 0 5px;
+    }
+}
+
+@include responsive("sm") {
+    .box-container {
+        padding: 0 10px;
+    }
+}
+
+@include responsive(sm) {
+    .ct-desk {
+        display: none;
+    }
+
+    .ct-mb {
+        display: block;
+    }
+}
+
+@media (max-width: 992px) {
+    .box-container {
+        padding: 0;
+    }
+}

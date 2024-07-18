@@ -1,0 +1,805 @@
+//<----------Section Payment------------->
+.st-payment {
+    background-color: $white;
+    margin-top: 24px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-color: #EDEEEF;
+}
+
+//Header
+.payment-header {
+    padding: 10px 24px;
+    border-bottom: 1px solid #EDEEEF;
+
+    &_title {
+        @include setText(Roboto, 24px, $gray-800, 32px, 500)
+    }
+}
+
+//Product
+.cart-product {
+    border-bottom: 1px solid #EDEEEF;
+}
+
+.cart-product__detail {
+    display: flex;
+    padding: 16px 24px;
+}
+
+//Product-info
+.product-info {
+    display: flex;
+    max-width: 428px;
+    width: 100%;
+
+    &__info {
+        position: relative;
+    }
+
+    &__img {
+        max-width: 80px;
+        width: 100%;
+        margin-right: 8px
+    }
+
+    &__title {
+        @include setText(Roboto, 16px, $gray-800, 24px, 500);
+        margin-bottom: 8px;
+    }
+
+    &__color {
+        @include setText(Roboto, 14px, $gray-700, 20px, 400);
+        border: 1px solid $gray-400;
+        max-width: 118px;
+        width: 100%;
+        @include flexJustify(space-between);
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+}
+
+.product-info__contain {
+    display: block;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 84%;
+    background-color: $white;
+
+    &-color {
+        border-bottom: 1px solid $gray-400;
+        padding: 4px 8px;
+
+        &:hover {
+            background-color: beige;
+        }
+
+        &:last-child {
+            border: none;
+        }
+    }
+}
+
+//Product-total
+.product-total {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.input-spinner {
+    max-width: 96px;
+    width: 100%;
+    border: 1px solid $gray-300;
+    border-radius: 4px;
+    display: inline-flex;
+    text-align: center;
+
+    &_icon {
+        width: 32px;
+        padding: 8px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $gray-100;
+        }
+    }
+
+    &_delete {
+        @include setText(Roboto, 12px, $gray-500, 16px, 400);
+        text-align: center;
+        margin-top: 8px;
+        cursor: pointer;
+
+    }
+
+    &_css {
+        background-color: $white !important;
+        border: none !important;
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+.icon-trash {
+    margin-right: 4px
+}
+
+.input-spinner__val {
+    border: none;
+    border-left: 1px solid $gray-300;
+    border-right: 1px solid $gray-300;
+    width: 40%;
+    text-align: center;
+    @include setText(Roboto, 14px, $gray-700, 14px, 400);
+
+    &:focus {
+        outline: none;
+    }
+}
+
+//product-cost
+.product-cost {
+    display: block;
+    @include setText(Roboto, 14px, $primary-500, 20px, 400);
+}
+
+.product-cost-container {
+    margin-left: 24px;
+    text-align: end;
+    position: relative;
+}
+
+//voucher
+.voucher {
+    padding: 16px 24px;
+    display: flex;
+    border-bottom: 1px solid #EDEEEF;
+}
+
+.voucher_left {
+    max-width: 428px;
+    width: 100%;
+
+    &-title {
+        @include setText(Roboto, 16px, $gray-800, 24px, 500);
+        margin-bottom: 8px;
+    }
+
+    &-input {
+        border: 1px solid $gray-400;
+        padding: 4px 8px;
+        @include setText(Roboto, 16px, $gray-500, 24px, 400);
+        max-width: 200px;
+        width: 100%;
+        border-radius: 4px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &-btn {
+        background-color: $link-500;
+        padding: 7px 12px;
+        @include setText(Roboto, 14px, $white, 19px, 400);
+        border: none;
+        border-radius: 4px;
+
+        &-disabled {
+            background-color: $gray-200;
+            @include setText(Roboto, 14px, $gray-600, 19px, 400);
+            cursor: default;
+            border: none;
+            border-radius: 4px;
+            padding: 7px 12px;
+        }
+    }
+}
+
+.voucher_right {
+    display: flex;
+    flex: 1;
+
+    &-value {
+        text-align: end;
+
+        &-total {
+            @include setText(Roboto, 14px, $gray-700, 20px, 400);
+        }
+
+        &-pay {
+            @include setText(Roboto, 16px, $primary-500, 24px, 500);
+        }
+    }
+}
+
+.voucher_right-cost {
+    width: 100%;
+
+    &-total {
+        @include setText(Roboto, 14px, $gray-800, 20px, 400);
+    }
+
+    &-pay {
+        @include setText(Roboto, 16px, $gray-800, 24px, 500);
+
+    }
+}
+
+.product-voucher-tag {
+    background-color: $gray-200;
+    @include setText(Roboto, 14px, $gray-600, 14px, 400);
+    padding: 4px 8px;
+    border-radius: 4px;
+    position: absolute;
+    display: flex;
+    bottom: 24%;
+    right: 85%;
+}
+
+
+// Customer
+.customer {
+    padding: 16px 0px;
+}
+
+.form-title-container {
+    @include flexJustify(space-between);
+    padding: 8px 24px;
+}
+
+.form-title-container_short {
+    background-color: $gray-100
+}
+
+
+.form-title {
+    @include setText(Roboto, 16px, $gray-800, 24px, 500);
+}
+
+.form-edit {
+    display: none;
+
+    &-container {
+        @include setText(Roboto, 14px, $link-500, 14px, 400);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+.ic-edit {
+    margin-right: 4px;
+}
+
+.form-gender {
+    display: flex;
+    margin-bottom: 8px;
+    padding: 0 24px;
+
+    &_content {
+        margin-right: 16px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.form-checkbox {
+    margin-right: 8px;
+    padding: 8px;
+}
+
+.form-pi {
+    padding: 0 24px;
+
+}
+
+.form-pi_detail {
+    max-width: 237px;
+    width: 100%;
+    padding: 6px 12px;
+    border: 1px solid $gray-400;
+    border-radius: 4px;
+    @include setText(Roboto, 14px, $gray-500, 20px, 400);
+    margin-bottom: 8px;
+
+    &:first-child {
+        margin-right: 16px;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.form-pi-email {
+    max-width: 494px;
+    width: 100%;
+}
+
+.form-pi-finished {
+    display: none;
+    padding-left: 10px;
+}
+
+//<----------Chon hinh thuc nhan hang------------->
+.deli-title {
+    padding: 0 24px;
+    @include setText(Roboto, 16px, $gray-800, 24px, 500);
+
+}
+
+.form-pi-td {
+    padding: 8px 16px;
+}
+
+.form-pi-td {
+    @include setText(Roboto, 14px, $gray-600, 20px, 400);
+}
+
+
+
+//dropdown deli
+.dropdown-deli {
+    max-width: 237px;
+    width: 100%;
+    margin-right: 16px;
+    margin-bottom: 8px;
+
+    &_addr {
+        max-width: 490px;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    &-time {
+        width: 364px;
+    }
+}
+
+.dropdown-menu-wrapper-city {
+    overflow-y: auto;
+    max-height: 100px;
+}
+
+.deli-ship {
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.dropdown-menu-deli {
+    width: 100% !important;
+
+    &_addr {
+        width: 100% !important;
+        max-width: 490px !important;
+
+    }
+}
+
+.deli-ship-time {
+    display: flex;
+    max-width: 490px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+
+    &_title {
+        @include setText(Roboto, 14px, $gray-600, 20px, 500);
+        width: 30%;
+    }
+}
+
+.dropdown-deli-container {
+    display: flex;
+    width: 100%;
+}
+
+//delivery order
+.deli-order {
+    &_addr {
+        padding: 0px 16px;
+    }
+
+    &_shop {
+        border: 1px solid $gray-400;
+        margin-left: 16px;
+        max-width: 490px;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    &-container {
+        display: none
+    }
+
+    &_item {
+        border-bottom: 1px solid $gray-200 !important;
+        padding: 8px 16px;
+    }
+}
+
+.shop-title {
+    @include setText(Roboto, 14px, $gray-800, 20px, 500);
+    padding: 0px 16px;
+}
+
+.order-date {
+    margin-left: 16px;
+}
+
+//<----------Section footer------------->
+
+.st-footer {
+    background-color: $white;
+    padding-top: 24px;
+}
+
+.footer-container {
+    text-align: center;
+    border-top: 1px solid #EDEEEF;
+    padding-top: 24px;
+    margin-top: 16px;
+}
+
+.footer_oder {
+    background-color: $link-500;
+    max-width: 262px;
+    width: 100%;
+    padding: 18px 32px;
+    border-radius: 6px;
+    margin: 0 auto;
+
+    &-title {
+        @include setText(Roboto, 20px, $white, 20px, 500);
+
+    }
+}
+
+.footer_rules {
+    @include setText(Roboto, 14px, $gray-500, 20px, 400);
+    margin-top: 16px;
+
+    span {
+        text-decoration: underline;
+    }
+}
+
+.deli-ship {
+    padding: 0 16px;
+    padding-bottom: 16px;
+}
+
+//choose service
+.form-choose-service {
+    padding: 0 16px;
+
+    &_title {
+        @include setText(Roboto, 16px, $gray-800, 24px, 500);
+
+    }
+
+    &_container {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 24px;
+        margin-top: 8px;
+    }
+
+    &_input {
+        display: none;
+
+    }
+}
+
+//choose payment
+.form-choose-payment {
+    border-top: 1px solid $gray-200;
+    margin-top: 16px;
+    padding-top: 16px;
+
+    &-container {
+        padding: 0 16px;
+    }
+
+    &-title {
+        @include setText(Roboto, 16px, $gray-800, 24px, 500);
+
+    }
+
+
+}
+
+.form-payment {
+    padding: 0;
+    display: inline;
+}
+
+//<----------Section no cart------------->
+.no-product {
+    display: none;
+
+    &_container {
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 20px;
+        background-color: $white;
+    }
+
+    &-contain {
+        @include flexJustify(center);
+        flex-direction: column
+    }
+
+    &_title {
+        @include setText(Roboto, 24px, $gray-800, 32px, 500);
+        margin-bottom: 8px
+    }
+
+    &_content {
+        @include setText(Roboto, 14px, $gray-500, 20px, 400);
+        margin-bottom: 16px
+    }
+
+    &_btn {
+        background-color: $primary-500;
+        @include setText(Roboto, 14px, $white, 20px, 400);
+        border-radius: 20px;
+        border: none;
+        padding: 12px;
+        max-width: 120px;
+        width: 100%;
+
+        &:hover {
+            background-color: #a20f14;
+        }
+    }
+
+    &-img {
+        width: 35%;
+    }
+}
+
+//search bank
+.form-control {
+    width: 100%;
+    padding: 6px 8px;
+    padding-left: 32px;
+    border: 1px solid $gray-200;
+}
+
+.container-input {
+    max-width: 490px;
+    width: 100%;
+    position: relative;
+}
+
+.list-group {
+    border: 1px solid $gray-200;
+    max-width: 490px;
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.list-group-item {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $gray-200;
+    margin-bottom: 0 !important;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #EDEEEF;
+    }
+}
+
+.img-thumbnail {
+    margin-right: 12px;
+}
+
+.ic-search-bank {
+    position: absolute;
+    top: 28%;
+    left: 2%;
+    color: $gray-500;
+}
+
+.search-bank {
+    display: none;
+}
+
+.img-bank {
+    width: 100%;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.container-img-bank {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 490px;
+    width: 100%;
+}
+
+.img-bank-content {
+    width: 25%;
+    position: relative;
+}
+
+.overlay-bank_img {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(129, 124, 124, 0.801);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 4px;
+    width: 98%;
+    height: 98%;
+}
+
+.img-bank-content .overlay-bank_img:hover {
+    opacity: 1;
+}
+
+.overlay-contain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+//desk hide
+.input-spinner-mobile {
+    display: none;
+}
+
+.input-spinner_delete-mobile {
+    display: none
+}
+
+.color-mobile {
+    display: none !important;
+}
+
+//mobile
+//payment__container
+@media (max-width: 992px) {
+    .cart-product__detail {
+        padding: 8px 10px;
+    }
+
+    .voucher {
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .product-total {
+        display: none
+    }
+
+    .payment-header_title {
+        @include setText(Roboto, 16px, $gray-800, 24px, 500);
+
+    }
+
+    .color-desk {
+        display: none !important;
+    }
+
+    .input-spinner-mobile {
+        display: inline-flex;
+    }
+
+    .input-spinner_delete {
+        margin: 0;
+
+        &-mobile {
+            display: flex;
+            height: 20px
+        }
+    }
+
+    .ic-trash {
+        font-size: 18px;
+    }
+
+    .voucher_left {
+        display: none;
+    }
+
+    .color-mobile {
+        display: block !important;
+        margin: 8px 10px;
+
+        &_dropdown {
+            width: 100% !important;
+        }
+    }
+}
+
+//customer
+@media (max-width: 992px) {
+    .form-pi_detail {
+        max-width: none;
+    }
+
+
+    .dropdown-deli {
+        max-width: none;
+
+        &:fir-child(even) {
+            margin-right: 0;
+        }
+    }
+
+    .deli-ship-time_title {
+        width: 40%;
+    }
+
+    .dropdown-deli-time {
+        width: 60%;
+    }
+}
+
+//nhan tai store
+@media (max-width: 992px) {
+    .deli-order {
+        padding: 0 8px;
+    }
+
+    .deli-order_addr {
+        display: flex;
+        padding: 0;
+    }
+
+    .deli-order_shop {
+        margin-left: 0;
+        max-width: none;
+    }
+
+    .shop-title {
+        padding: 0;
+    }
+
+    .order-date {
+        margin-left: 0;
+    }
+
+    .form-choose-service {
+        padding: 0;
+    }
+
+    .dropdown-deli-mobile {
+        margin-right: 0;
+    }
+
+    .form-gender {
+        padding: 8px 0px;
+        margin-bottom: 0px;
+    }
+
+    .form-pi {
+        padding: 0 8px;
+    }
+
+    .deli-title {
+        padding: 0 8px;
+    }
+
+    .form-choose-payment-container {
+        padding: 0 8px;
+    }
+
+    .form-checkbox {
+        padding: 8px 8px;
+    }
+}

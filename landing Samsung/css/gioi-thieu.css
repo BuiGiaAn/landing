@@ -1,0 +1,38 @@
+.fs-abbfill {
+    background: #fff;
+    border: none;
+}
+.shopv2-list-shop {
+    border: 1px solid #e3e3e3;
+}
+.shopv2-filter-input:before {
+    -webkit-transform: translate(-50%,-50%) rotate(45deg);
+    -ms-transform: translate(-50%,-50%) rotate(45deg);
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.shopv2-filter-input:after {
+    -webkit-transform: translate(-50%,-50%) rotate(135deg);
+    -ms-transform: translate(-50%,-50%) rotate(135deg);
+    transform: translate(-50%,-50%) rotate(133deg);
+}
+
+.shopv2-filter-input:before, .shopv2-filter-input:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 14px;
+    height: 1px;
+    border-radius: 4px;
+    background: #a9b0b6;
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}

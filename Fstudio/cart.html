@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Payment</title>
+  <meta name="description" content="FPT Shop" />
+  <meta name="keywords" content="FPTSHOP" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="copyright" content="Công ty Cổ phần Bán lẻ Kỹ thuật số FPT" />
+  <meta name="author" content="Công ty Cổ phần Bán lẻ Kỹ thuật số FPT" />
+  <meta http-equiv="audience" content="General" />
+  <meta name="resource-type" content="Document" />
+  <meta name="distribution" content="Global" />
+  <meta name="GENERATOR" content="Công ty Cổ phần Bán lẻ Kỹ thuật số FPT" />
+  <meta property="fb:app_id" content="289591837916420" />
+  <meta property="article:publisher" content="https://www.facebook.com/FPTShopOnline" />
+  <meta property="article:author" content="https://www.facebook.com/FPTShopOnline" />
+  <meta property="og:image" content="http://fptshop.com.vn/Content/v3/images/logo-black.png" />
+  <meta property="og:title" content="FPTShop" />
+  <meta property="og:description" content="FPTShop" />
+  <!-- Favicons -->
+  <link rel="icon" href="images/favicon.ico" />
+  <!-- Css -->
+  <link rel="stylesheet" href="css/treset.css" />
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/icon-fptshop.css" />
+  <link rel="stylesheet" href="css/system.css">
+  <!-- light library -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-zoom.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-medium-zoom.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-rotate.min.css">
+  <!-- Js -->
+  <script src="js/libs/jquery-1.11.2.min.js"></script>
+  <script src="js/libs/bootstrap.min.js"></script>
+  <script src="js/libs/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/libs/jquery.countdown.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!---swiper-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+  <main>
+    <section class="st-payment box-container">
+      <div class="payment__container">
+        <!-- Header -->
+        <header class="payment-header">
+          <h3 class="payment-header_title">Có 1 sản phẩm trong giỏ hàng</h3>
+        </header>
+        <!-- Product-->
+        <section class="cart-product">
+          <div class="cart-product__detail">
+            <div class="product-info">
+              <div class="product-info__img"><img src="./images/product.png" alt=""></div>
+
+              <div class="product-info__info">
+                <div class="product-info__title">MacBook Pro 16" 2021 M1 Pro Ram 32GB</div>
+                <div class="input-spinner input-spinner-mobile">
+                  <span class="input-spinner_icon" id="minus"><i class="ic-minus"></i></span>
+                  <input class="input-spinner__val" id="spinner-value" type="text" value="1">
+                  <span class="input-spinner_icon" id="plus"><i class="ic-plus"></i></span>
+                </div>
+                <div class="dropdown js-dropdown-open color-desk">
+                  <div class="dropdown-button active">
+                    <span>Bạc</span>
+                    <i class="ic-arrow-select ic-md"></i>
+                  </div>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-menu-wrapper">
+                      <a class="item-region active" href="#">
+                        <span>Bạc</span>
+                        <i class="ic-check ic-sm m-l-8"></i>
+                      </a>
+                      <a class="item-region" href="#">
+                        <span>Hồng</span>
+                        <i class="ic-check ic-sm m-l-8"></i>
+                      </a>
+                      <a class="item-region" href="#" class="">
+                        <span>Xanh</span>
+                        <i class="ic-check ic-sm m-l-8"></i>
+                      </a>
+                      <a class="item-region" href="#" class="">
+                        <span>Đỏ</span>
+                        <i class="ic-check ic-sm m-l-8"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <button class="input-spinner_css input-spinner_delete-mobile">
+                <div class="input-spinner_delete " aria-controls="modal-no-header"><i class="ic-trash"></i></div>
+              </button>
+            </div>
+            <div class="product-total">
+              <div class="input-spinner-container">
+                <div class="input-spinner">
+                  <span class="input-spinner_icon" id="minus"><i class="ic-minus"></i></span>
+                  <input class="input-spinner__val" id="spinner-value" type="text" value="1">
+                  <span class="input-spinner_icon" id="plus"><i class="ic-plus"></i></span>
+                </div>
+
+                <!-- <div class="input-spinner_delete" id="delete"><i class="ic-trash"></i>Xóa</div> -->
+
+                <button class="input-spinner_css" aria-controls="modal-no-header">
+                  <div class="input-spinner_delete"><i class="ic-trash"></i>Xóa</div>
+                </button>
+
+                <div class="modal modal-lg js-modal" id="modal-no-header" data-animation="on">
+                  <div class="modal-wrapper" tabindex="-1">
+                    <div class="modal-box">
+                      <div class="modal-body text-center">
+                        <div class="modal-shape m-b-8">
+                          <img src="./images/delete.png" alt="">
+                        </div>
+                        <div class="f-s-p-16 f-w-500">Bạn có chắc chắc muốn xóa sản phẩm này?</div>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn btn-outline-grayscale btn-md m-r-16" id="delete">Xác nhận</button>
+                        <button class="btn btn-primary btn-md" id="return">Hủy</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="product-cost-container">
+                <span class="product-cost" id="product-cost" data-cost="13990000">13.990.000₫</span>
+                <span class="product-cost-default">16.990.000₫</span>
+                <span class="product-cost product-cost-voucher active" id="product-voucher"
+                  data-voucher="500000">-500.000₫
+                  <div class="product-voucher-tag"><i class="ic-tag"></i> MACBOOK16</div>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="color-mobile">
+            <div class="dropdown js-dropdown-open color-mobile_dropdown">
+              <div class="dropdown-button active">
+                <span>Bạc</span>
+                <i class="ic-arrow-select ic-md"></i>
+              </div>
+              <div class="dropdown-menu color-mobile_dropdown">
+                <div class="dropdown-menu-wrapper">
+                  <a class="item-region active" href="#">
+                    <span>Bạc</span>
+                    <i class="ic-check ic-sm m-l-8"></i>
+                  </a>
+                  <a class="item-region" href="#">
+                    <span>Hồng</span>
+                    <i class="ic-check ic-sm m-l-8"></i>
+                  </a>
+                  <a class="item-region" href="#" class="">
+                    <span>Xanh</span>
+                    <i class="ic-check ic-sm m-l-8"></i>
+                  </a>
+                  <a class="item-region" href="#" class="">
+                    <span>Đỏ</span>
+                    <i class="ic-check ic-sm m-l-8"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Voucher -->
+        <section class="voucher">
+          <div class="voucher_left">
+            <h3 class="voucher_left-title">Mã giảm giá</h3>
+            <div class="voucher_left-content">
+              <input class="voucher_left-input" type="text" placeholder="Nhập mã giảm giá">
+              <button class="voucher_left-btn-disabled">Áp dụng</button>
+            </div>
+          </div>
+          <div class="voucher_right">
+            <div class="voucher_right-cost">
+              <div class="voucher_right-cost-total">Tổng tiền: </div>
+              <div class="voucher_right-cost-pay">Cần thanh toán:</div>
+            </div>
+            <div class="voucher_right-value">
+              <div class="voucher_right-value-total" id="paymentCost">13.990.000₫</div>
+              <div class="voucher_right-value-pay" id="paymentTotal">13.990.000₫</div>
+            </div>
+          </div>
+        </section>
+        <!-- Customer In4 -->
+        <section class="customer">
+          <div class="customer-form">
+            <div class="form-title-container">
+              <h3 class="form-title">Thông tin khách hàng</h3>
+              <div class="form-edit-container">
+                <div class="form-edit"><i class="ic-edit"></i>Thay đổi</div>
+              </div>
+            </div>
+
+            <div class="form-pi-container">
+              <div class="form-gender">
+                <div class="checkbox checkbox-sm form-checkbox">
+                  <input type="checkbox" name="anh" class="checked-box check-gender " value="checkbox3" name="grp1"
+                    id="ex14" />
+                  <label for="ex14" class="label label-sm label-gender">
+                    <span class="label-text f-w-400 ">Anh</span>
+                  </label>
+                </div>
+                <div class="checkbox checkbox-sm form-checkbox">
+                  <input type="checkbox" name="chi" class="checked-box check-gender" value="checkbox3" name="grp1"
+                    id="ex15" />
+                  <label for="ex15" class="label label-sm label-gender">
+                    <span class="label-text f-w-400 ">Chị</span>
+                  </label>
+                </div>
+
+              </div>
+
+              <div class="form-pi">
+                <div class="form-pi-container"><input type="text" class="form-pi_detail" placeholder="Nhập họ và tên"
+                    id="name">
+                  <input type="text" class="form-pi_detail" placeholder="Nhập số điện thoại" id="phone">
+                  <input type="text" class="form-pi_detail form-pi-email" placeholder="Nhập email (không bắt buộc)"
+                    id="email">
+                </div>
+
+
+              </div>
+            </div>
+
+            <div class="form-pi-finished">
+              <table class="form-pi-table">
+                <tbody>
+                  <tr class="form-pi-tr">
+                    <td class="form-pi-td table-title">Họ và tên:</td>
+                    <td class="form-pi-td table-content" id="form-name">An</td>
+                  </tr>
+                  <tr class="form-pi-tr">
+                    <td class=" form-pi-td table-title">Số điện thoại:</td>
+                    <td class="form-pi-td table-content" id="form-phone">0945641098</td>
+                  </tr>
+                  <tr class="form-pi-tr">
+                    <td class=" form-pi-td table-title">Email:</td>
+                    <td class="form-pi-td table-content" id="form-email">giaaan</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="form-choose-deli">
+              <div class="deli-title">Chọn hình thức nhận hàng</div>
+              <div class="form-gender">
+                <div class="checkbox checkbox-sm form-checkbox">
+                  <input type="checkbox" class="checked-box" value="checkbox3" name="grp1" id="ex16" />
+                  <label for="ex16" class="label label-sm">
+                    <span class="label-text f-w-400">Giao hàng tận nơi</span>
+                  </label>
+                </div>
+                <div class="checkbox checkbox-sm form-checkbox">
+                  <input type="checkbox" class="checked-box" value="checkbox3" name="grp1" id="ex17" />
+                  <label for="ex17" class="label label-sm">
+                    <span class="label-text f-w-400">Nhận tại cửa hàng</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="deli-ship">
+                <div class="dropdown-deli-container">
+                  <div class="dropdown js-dropdown-open dropdown-deli">
+                    <div class="dropdown-button active">
+                      <span>Chọn thành phố</span>
+                      <i class="ic-arrow-select ic-md"></i>
+                    </div>
+                    <div class="dropdown-menu dropdown-menu-deli">
+                      <div class="dropdown-menu-wrapper dropdown-menu-wrapper-city">
+                        <a class="item-region" href="#!">
+                          <span>Hà Nội</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+                        <a class="item-region" href="#!">
+                          <span>Hồ Chí Minh</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+                        <a class="item-region" href="#!">
+                          <span>Đà Nẵng</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+                        <a class="item-region" href="#!">
+                          <span>Hải Phòng</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+                        <a class="item-region" href="#!">
+                          <span>Cần Thơ</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+                        <a class="item-region" href="#!">
+                          <span>Nha Trang</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+                        <a class="item-region" href="#!">
+                          <span>Vũng Tàu</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+                        <a class="item-region" href="#!">
+                          <span>Huế</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+                        <a class="item-region" href="#!">
+                          <span>Đà Lạt</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+                        <a class="item-region" href="#!">
+                          <span>Buôn Ma Thuột</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="dropdown js-dropdown-open dropdown-deli">
+                    <div class="dropdown-button active">
+                      <span>Chọn quận</span>
+                      <i class="ic-arrow-select ic-md"></i>
+                    </div>
+                    <div class="dropdown-menu dropdown-menu-deli">
+                      <div class="dropdown-menu-wrapper dropdown-menu-wrapper-city">
+                        <a class="item-region" href="#!">
+                          <span>Hà Nội</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+                        <a class="item-region" href="#!">
+                          <span>Hồ Chí Minh</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+                        <a class="item-region" href="#!">
+                          <span>Đà Nẵng</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+                        <a class="item-region" href="#!">
+                          <span>Hải Phòng</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+                        <a class="item-region" href="#!">
+                          <span>Cần Thơ</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+                        <a class="item-region" href="#!">
+                          <span>Nha Trang</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+                        <a class="item-region" href="#!">
+                          <span>Vũng Tàu</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+                        <a class="item-region" href="#!">
+                          <span>Huế</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+                        <a class="item-region" href="#!">
+                          <span>Đà Lạt</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+                        <a class="item-region" href="#!">
+                          <span>Buôn Ma Thuột</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="dropdown js-dropdown-open dropdown-deli_addr">
+                  <div class="dropdown-button active">
+                    <span>Chọn phường</span>
+                    <i class="ic-arrow-select ic-md"></i>
+                  </div>
+                  <div class="dropdown-menu dropdown-menu-deli_addr">
+                    <div class="dropdown-menu-wrapper dropdown-menu-wrapper-city">
+                      <a class="item-region" href="#!">
+                        <span>Hà Nội</span>
+                        <i class="ic-check ic-sm m-l-8"></i>
+                      </a>
+                      <a class="item-region" href="#!">
+                        <span>Hồ Chí Minh</span>
+                        <i class="ic-check ic-sm m-l-8"></i>
+                      </a>
+                      <a class="item-region" href="#!">
+                        <span>Đà Nẵng</span>
+                        <i class="ic-check ic-sm m-l-8"></i>
+                      </a>
+                      <a class="item-region" href="#!">
+                        <span>Hải Phòng</span>
+                        <i class="ic-check ic-sm m-l-8"></i>
+                      </a>
+                      <a class="item-region" href="#!">
+                        <span>Cần Thơ</span>
+                        <i class="ic-check ic-sm m-l-8"></i>
+                      </a>
+                      <a class="item-region" href="#!">
+                        <span>Nha Trang</span>
+                        <i class="ic-check ic-sm m-l-8"></i>
+                      </a>
+                      <a class="item-region" href="#!">
+                        <span>Vũng Tàu</span>
+                        <i class="ic-check ic-sm m-l-8"></i>
+                      </a>
+                      <a class="item-region" href="#!">
+                        <span>Huế</span>
+                        <i class="ic-check ic-sm m-l-8"></i>
+                      </a>
+                      <a class="item-region" href="#!">
+                        <span>Đà Lạt</span>
+                        <i class="ic-check ic-sm m-l-8"></i>
+                      </a>
+                      <a class="item-region" href="#!">
+                        <span>Buôn Ma Thuột</span>
+                        <i class="ic-check ic-sm m-l-8"></i>
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group dropdown-deli_addr">
+                  <input type="text" class="form-input" placeholder="Nhập địa chỉ cụ thể" />
+                </div>
+
+                <div class="deli-ship-time">
+                  <div class="deli-ship-time_title">Thời gian giao hàng:</div>
+                  <div class="dropdown js-dropdown-open dropdown-deli-time ">
+                    <div class="dropdown-button active">
+                      <span>Chọn giờ giao</span>
+                      <i class="ic-arrow-select ic-md"></i>
+                    </div>
+                    <div class="dropdown-menu dropdown-menu-deli">
+                      <div class="dropdown-menu-wrapper dropdown-menu-wrapper-city">
+                        <a class="item-region" href="#!">
+                          <span>Chỉ giao trong giờ hành chính</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+                        <a class="item-region" href="#!">
+                          <span>Tất cả các ngày trong tuần</span>
+                          <i class="ic-check ic-sm m-l-8"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group dropdown-deli_addr">
+                  <input type="text" class="form-input" placeholder="Ghi chú" />
+                </div>
+
+                <div class="form-choose-service">
+                  <div class="form-choose-service_title"> Chọn thêm các dịch vụ/yêu cầu</div>
+                  <div class="checkbox checkbox-md m-b-8 ">
+                    <input type="checkbox" value="checkbox3" name="Type12" id="type121" />
+                    <label for="type121" class="label label-md label-is-icon label-icon-right">
+                      <i class="ic-help ic-md ic-circle"></i>
+                      <span class="label-text f-w-400">Hỗ trợ kỹ thuật</span>
+                    </label>
+                  </div>
+
+                  <div class="checkbox checkbox-md">
+                    <input type="checkbox" value="checkbox3" name="Type12" id="type122" />
+                    <label for="type122" class="label label-md label-is-icon label-icon-right">
+                      <i class="ic-help ic-md ic-circle"></i>
+                      <span class="label-text f-w-400">Xuất hoá đơn công ty</span>
+                    </label>
+                  </div>
+
+                  <div class="form-choose-service_input" id="bill">
+                    <div class="form-choose-service_container">
+                      <div class="form-group dropdown-deli">
+                        <input type="text" class="form-input" placeholder="Nhập tên công ty" />
+                      </div>
+                      <div class="form-group dropdown-deli">
+                        <input type="text" class="form-input" placeholder="Nhập mã số thuế" />
+                      </div>
+                      <div class="form-group dropdown-deli_addr">
+                        <input type="text" class="form-input" placeholder="Nhập địa chỉ" />
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+
+              <div class="deli-order-container">
+                <div class="deli-order">
+                  <div class="deli-order_addr">
+                    <div class="dropdown js-dropdown-open dropdown-deli">
+                      <div class="dropdown-button active">
+                        <span>Chọn thành phố</span>
+                        <i class="ic-arrow-select ic-md"></i>
+                      </div>
+                      <div class="dropdown-menu dropdown-menu-deli">
+                        <div class="dropdown-menu-wrapper dropdown-menu-wrapper-city">
+                          <a class="item-region" href="#!">
+                            <span>Hà Nội</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+                          <a class="item-region" href="#!">
+                            <span>Hồ Chí Minh</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+                          <a class="item-region" href="#!">
+                            <span>Đà Nẵng</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+                          <a class="item-region" href="#!">
+                            <span>Hải Phòng</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+                          <a class="item-region" href="#!">
+                            <span>Cần Thơ</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+                          <a class="item-region" href="#!">
+                            <span>Nha Trang</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+                          <a class="item-region" href="#!">
+                            <span>Vũng Tàu</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+                          <a class="item-region" href="#!">
+                            <span>Huế</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+                          <a class="item-region" href="#!">
+                            <span>Đà Lạt</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+                          <a class="item-region" href="#!">
+                            <span>Buôn Ma Thuột</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="dropdown js-dropdown-open dropdown-deli">
+                      <div class="dropdown-button active">
+                        <span>Chọn quận</span>
+                        <i class="ic-arrow-select ic-md"></i>
+                      </div>
+                      <div class="dropdown-menu dropdown-menu-deli">
+                        <div class="dropdown-menu-wrapper dropdown-menu-wrapper-city">
+                          <a class="item-region" href="#!">
+                            <span>Hà Nội</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+                          <a class="item-region" href="#!">
+                            <span>Hồ Chí Minh</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+                          <a class="item-region" href="#!">
+                            <span>Đà Nẵng</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+                          <a class="item-region" href="#!">
+                            <span>Hải Phòng</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+                          <a class="item-region" href="#!">
+                            <span>Cần Thơ</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+                          <a class="item-region" href="#!">
+                            <span>Nha Trang</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+                          <a class="item-region" href="#!">
+                            <span>Vũng Tàu</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+                          <a class="item-region" href="#!">
+                            <span>Huế</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+                          <a class="item-region" href="#!">
+                            <span>Đà Lạt</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+                          <a class="item-region" href="#!">
+                            <span>Buôn Ma Thuột</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="shop-title">Có 13 shop tại Hồ Chí Minh. Hãy chọn shop bạn muốn nhận hàng:</h3>
+
+                  <div class="deli-order_shop">
+                    <div class="dropdown-menu-wrapper scrollbar">
+                      <a href="#" class="active">
+                        <div class="dropdown-address-item deli-order_item">
+                          <div class="radio radio-sm form-check-error">
+                            <input type="radio" value="radio3" name="grp1" id="ex421" />
+                            <label for="ex421">
+                              <div class="f-s-p-14 m-b-4">
+                                261 - 263 Khánh Hội (Ngã 4 Hoàng Diệu - KH), P. 5, Quận 4, Hồ Chí Minh
+                              </div>
+                              <div class="dropdown-address-status text-success">
+                                <i class="ic-check ic-xs ic-circle ic-bg-success m-r-4"></i>
+                                Có hàng
+                              </div>
+                            </label>
+                          </div>
+
+                        </div>
+                      </a>
+                      <a href="#" class="">
+                        <div class="dropdown-address-item deli-order_item">
+                          <div class="radio radio-sm form-check-error">
+                            <input type="radio" value="radio3" name="grp1" id="ex422" />
+                            <label for="ex422">
+                              <div class="f-s-p-14 m-b-4">
+                                141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
+                              </div>
+                              <div class="dropdown-address-status text-success">
+                                <i class="ic-check ic-xs ic-circle ic-bg-success m-r-4"></i>
+                                Có hàng
+                              </div>
+                            </label>
+
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="">
+                        <div class="dropdown-address-item deli-order_item">
+                          <div class="radio radio-sm form-check-error">
+                            <input type="radio" value="radio3" name="grp1" id="ex423" />
+                            <label for="ex423">
+                              <div class="f-s-p-14 m-b-4">
+                                141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
+                              </div>
+                              <div class="dropdown-address-status text-success">
+                                <i class="ic-check ic-xs ic-circle ic-bg-success m-r-4"></i>
+                                Có hàng
+                              </div>
+                            </label>
+
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="">
+                        <div class="dropdown-address-item deli-order_item">
+                          <div class="radio radio-sm form-check-error">
+                            <input type="radio" value="radio3" name="grp1" id="ex424" />
+                            <label for="ex424">
+                              <div class="f-s-p-14 m-b-4">
+                                141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
+                              </div>
+                              <div class="dropdown-address-status text-success">
+                                <i class="ic-check ic-xs ic-circle ic-bg-success m-r-4"></i>
+                                Có hàng
+                              </div>
+                            </label>
+
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="deli-ship-time order-date">
+                    <div class="deli-ship-time_title">Thời gian giao hàng:</div>
+                    <div class="dropdown js-dropdown-open dropdown-deli-time ">
+                      <div class="dropdown-button active">
+                        <span>Chọn giờ giao</span>
+                        <i class="ic-arrow-select ic-md"></i>
+                      </div>
+                      <div class="dropdown-menu dropdown-menu-deli">
+                        <div class="dropdown-menu-wrapper dropdown-menu-wrapper-city">
+                          <a class="item-region" href="#!">
+                            <span>Chỉ giao trong giờ hành chính</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+                          <a class="item-region" href="#!">
+                            <span>Tất cả các ngày trong tuần</span>
+                            <i class="ic-check ic-sm m-l-8"></i>
+                          </a>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group dropdown-deli_addr order-date">
+                    <input type="text" class="form-input" placeholder="Ghi chú" />
+                  </div>
+
+                  <div class="form-choose-service">
+                    <div class="form-choose-service_title"> Chọn thêm các dịch vụ/yêu cầu</div>
+                    <div class="checkbox checkbox-md m-b-8 ">
+                      <input type="checkbox" value="checkbox3" name="Type12" id="type124" />
+                      <label for="type124" class="label label-md label-is-icon label-icon-right">
+                        <i class="ic-help ic-md ic-circle"></i>
+                        <span class="label-text f-w-400">Hỗ trợ kỹ thuật</span>
+                      </label>
+                    </div>
+
+                    <div class="checkbox checkbox-md">
+                      <input type="checkbox" value="checkbox3" name="Type12" id="type123" />
+                      <label for="type123" class="label label-md label-is-icon label-icon-right">
+                        <i class="ic-help ic-md ic-circle"></i>
+                        <span class="label-text f-w-400">Xuất hoá đơn công ty</span>
+                      </label>
+                    </div>
+
+                    <div class="form-choose-service_input" id="bill1">
+                      <div class="form-choose-service_container">
+                        <div class="form-group dropdown-deli dropdown-deli-mobile">
+                          <input type="text" class="form-input" placeholder="Nhập tên công ty" />
+                        </div>
+                        <div class="form-group dropdown-deli dropdown-deli-mobile">
+                          <input type="text" class="form-input" placeholder="Nhập mã số thuế" />
+                        </div>
+                        <div class="form-group dropdown-deli_addr">
+                          <input type="text" class="form-input" placeholder="Nhập địa chỉ" />
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="form-choose-payment">
+            <div class="form-choose-payment-container">
+              <div class="form-choose-payment-title">Chọn hình thức thanh toán</div>
+
+              <div class="form-gender form-payment">
+                <div class="checkbox checkbox-sm form-checkbox">
+                  <input type="checkbox" class="checked-box" value="checkbox3" name="grp-bank" id="ex18" />
+                  <label for="ex18" class="label label-sm">
+                    <span class="label-text f-w-400">Trả tiền mặt khi nhận hàng/Trả góp lãi suất thường</span>
+                  </label>
+                </div>
+                <div class="checkbox checkbox-sm form-checkbox">
+                  <input type="checkbox" class="checked-box" value="checkbox3" name="grp-bank1" id="ex19" />
+                  <label for="ex19" class="label label-sm">
+                    <span class="label-text f-w-400">ATM nội địa/QR CODE/Internet Banking (Thanh toán qua
+                      VNPAY)</span>
+                  </label>
+                </div>
+                <div class="search-bank">
+                  <div class="container">
+                    <div class="container-input">
+                      <input type="text" name="search" id="search" placeholder="Nhập tên ngân hàng"
+                        class="form-control" />
+                      <i class="ic-search ic-search-bank"></i>
+                    </div>
+                    <ul class="list-group" id="result"></ul>
+                    <br />
+
+                    <div class="container-img-bank">
+                      <div class="img-bank-content">
+                        <div class="img-bank"><img src="./images/bank1.png" alt="">
+                          <div class="overlay-bank_img">
+                            <div class="overlay-contain"> <i class="ic-check"></i></div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="img-bank-content">
+                        <div class="img-bank"><img src="./images/bank1.png" alt="">
+                          <div class="overlay-bank_img">
+                            <div class="overlay-contain"> <i class="ic-check"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="img-bank-content">
+                        <div class="img-bank"><img src="./images/bank1.png" alt="">
+                          <div class="overlay-bank_img">
+                            <div class="overlay-contain"> <i class="ic-check"></i></div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="img-bank-content">
+                        <div class="img-bank"><img src="./images/bank1.png" alt="">
+                          <div class="overlay-bank_img">
+                            <div class="overlay-contain"> <i class="ic-check"></i></div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="checkbox checkbox-sm form-checkbox">
+                  <input type="checkbox" class="checked-box" value="checkbox3" name="grp-bank" id="ex20" />
+                  <label for="ex20" class="label label-sm">
+                    <span class="label-text f-w-400">Thanh toán bằng thẻ quốc tế Visa, Master, JCB, AMEX</span>
+                  </label>
+                </div>
+                <div class="checkbox checkbox-sm form-checkbox ">
+                  <input type="checkbox" class="checked-box" value="checkbox3" name="grp-bank" id="ex21" disabled />
+                  <label for="ex21" class="label label-sm">
+                    <span class="label-text f-w-400">Trả góp 0%</span>
+                  </label>
+                </div>
+              </div>
+
+
+
+            </div>
+
+            <div class="footer-container">
+              <div class="footer_oder"> <a href="" class="footer_oder-title">HOÀN TẤT ĐẶT HÀNG</a></div>
+              <div class="footer_rules">Bằng cách đặt hàng, bạn đồng ý với <span>Điều khoản sử dụng</span> của
+                F.Studio
+                by FPT
+              </div>
+            </div>
+
+
+        </section>
+
+      </div>
+    </section>
+
+    <section class="no-product grid">
+      <div class="no-product_container">
+        <div class="no-product-contain">
+          <h3 class="no-product_title">Chưa có sản phẩm nào trong giỏ hàng</h3>
+          <div class="no-product_content"> Cùng mua sắm hàng ngàn sản phẩm tại FPTShop nhé!</div>
+          <button class="no-product_btn">Mua hàng</button>
+        </div>
+        <div class="no-product-img">
+          <img src="./images/no-products-found.png" alt="">
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- library light -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/mediumZoom/lg-medium-zoom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/rotate/lg-rotate.min.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/util.js"></script>
+  <script src="./js/functions.js"></script>
+  <script src="./js/demo.js"></script>
+  <script src="./js/dropdown.js"></script>
+  <script src="./js/modal.js"></script>
+  <script>
+
+  </script>
+</body>

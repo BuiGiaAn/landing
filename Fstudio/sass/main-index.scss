@@ -1,0 +1,15 @@
+@import "abstract/_variables";
+@import "abstract/_mixin";
+@import "abstract/_function";
+@import "base/_base_index";
+@import "base/typography";
+@import "component/_block";
+@import "component/_btn";
+@import "component/_select-color";
+@import "component/_rules";
+@import "page/_home-index";
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
